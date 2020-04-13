@@ -1,0 +1,72 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=euc-kr">
+  <title>수업관리 페이지</title>
+</head>
+<body>
+  <!-- 정보보호학전공 14107050 임대동 -->
+  <center>
+  <h2>수강신청시스템 수업관리</h2>
+  <form action="midterm2.jsp" method="GET">
+    <table border=1>
+      <tr>
+        <td>학과</td>
+        <td>
+          <select name="major">
+            <option>IT공학부</option>
+            <option>컴퓨터공학전공</option>
+            <option>정보통신융합공학</option>
+            <option>정보보호학전공</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>학년</td>
+        <td>
+          <input type="radio" name="grade" value="1"> 1
+          <input type="radio" name="grade" value="2"> 2
+          <input type="radio" name="grade" value="3"> 3
+          <input type="radio" name="grade" value="4"> 4
+        </td>
+      </tr>
+      <tr>
+        <td>유형</td>
+        <td>
+          <input type="radio" name="category" value="전선"> 전선
+          <input type="radio" name="category" value="전필"> 전필
+        </td>
+      </tr>
+      <tr>
+        <td>교과목코드</td>
+        <td>
+          <input type="text" name="lecture_code"><br/>
+        </td>
+      </tr>
+      <tr>
+        <td>교과목이름</td>
+        <td>
+          <input type="text" name="lecture_name"><br/>
+        </td>
+      </tr>
+      <tr>
+        <td>학점</td>
+        <td>
+          <select name="lecture_num">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <br/>
+    <p>
+    <input type="submit" value="전송" name="submitbtn">
+    <input type="reset" value="초기화" name="resetbtn">
+  </form>
+  </center>
+</body>
+</html>
