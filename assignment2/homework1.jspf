@@ -1,0 +1,27 @@
+<%@ page contentType="text/html; charset=euc-kr" %>
+<%@ page import="java.util.*" %>
+<%
+  Date date = new Date();
+  Calendar calendar = GregorianCalendar.getInstance();
+  calendar.setTime(date);
+  String jspf_var1 = "";
+  String jspf_var2 = "";
+  int hour = calendar.get(Calendar.HOUR_OF_DAY);
+  int month = calendar.get(Calendar.MONTH);
+  int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+  if (hour > 12) {
+    jspf_var1 = "Good Morning~";
+  } else if (hour < 12) {
+    jspf_var1 = "Good Afternoon~";
+  }
+  
+  if (month == 0 && day == 1) {
+    jspf_var2 = "Happy new yeadr~!";
+  } else if (month == 11 && day == 25) {
+    jspf_var2 = "Merry Christmas!";
+  } else if (month == 9 && day == 4) {
+    jspf_var2 = "오늘은 10월 4일 입니다!!!";
+  }
+%>
+<%= start + date + end %>
